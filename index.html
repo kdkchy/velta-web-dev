@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>Velta Academy - Learning to build website</title>
+</head>
+<body>
+    <!-- Navbar unit -->
+    <div class="navigation">
+        <div class="container">
+            <nav class="navigation__inner" id="navigationInner">
+                <div class="navigation__menu">
+                    <a href="#home" class="active">Velta</a>
+					<a href="#learning" class="active">Dive</a>
+                    <a href="goal-maker.html">Goal Maker</a>
+                    <a href="articles.html">Articles</a>
+                    <a href="javascript:void(0);" class="icon" onclick="navigationControl()">
+                        [_]
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar unit -->
+
+    <!-- Hero unit -->
+	<section class="hero" id="home">
+		<div class="hero__inner">
+			<div class="container">
+				<div class="hero__content">
+					<div class="hero__content__inner">
+						<h1 class="hero__title">Velta Academy</h1>
+						<p class="hero__text">Small people with the big plan for bring future home.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <!-- Hero unit -->
+
+    <!-- Steps -->
+	<div class="steps landing__section" id="learning">
+		<div class="container">
+			<h2>What will we learn?</h2>
+			<p>Dive into fun, engaging lessons that'll teach you the essentials for success</p>
+		</div>
+		<div class="container">
+			<div class="steps__inner">
+				<div class="step">
+					<div class="step__media">
+						<img src="./assets/images/html_logo.png" class="step__image">
+					</div>
+					<h4>HTML</h4>
+					<p class="step__text">HyperText Markup Language, is the standard language used to create and design web pages.</p>
+				</div>
+				<div class="step">
+					<div class="step__media">
+						<img src="./assets/images/css_logo.png" class="step__image">
+					</div>
+					<h4>CSS</h4>
+					<p class="step__text">
+						Cascading Style Sheets, is a style sheet language used for describing the presentation of a document written in HTML.</p>
+				</div>
+				<div class="step">
+					<div class="step__media">
+						<img src="./assets/images/js_logo.png" class="step__image">
+					</div>
+					<h4>JavaScript</h4>
+					<p class="step__text">Dynamic programming language used enhancing user experience and web page functionality.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Steps -->
+
+	<!-- Expanded -->
+	<div class="expanded landing__section">
+		<div class="container">
+			<div class="expanded__inner">
+				<div class="expanded__media">
+					<img src="./assets/images/easy_logo.png" class="expanded__image">
+				</div>
+				<div class="expanded__content">
+					<h2 class="expanded__title">Wrapped for easy understanding</h2>
+					<p class="expanded__text">Implies presenting complex information in a simplified, accessible manner. This approach involves breaking down intricate concepts into digestible pieces, using clear language and relatable examples to ensure comprehension for a diverse audience, enhancing learning and retention.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="expanded landing__section">
+		<div class="container">
+			<div class="expanded__inner">
+				<div class="expanded__media">
+					<img src="./assets/images/curious_logo.png" class="expanded__image">
+				</div>
+				<div class="expanded__content">
+					<h2 class="expanded__title">Curiosity guides you</h2>
+					<p class="expanded__text">Emphasizes using inquisitiveness as a driving force for learning. It encourages exploring beyond the familiar, fostering creativity and growth through questioning and seeking new experiences.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Expanded -->
+
+    <!-- Call To Action -->
+	<div class="cta cta__reverse">
+		<div class="container">
+			<div class="cta__inner">
+				<h2 class="cta__title">Get to know us</h2>
+				<p class="cta__sub cta__sub__center">Find us on every social media</p>
+				<a href="#" class="button button__accent">@velta.academy</a>
+			</div>
+		</div>
+	</div>
+	<!-- Call To Action -->
+
+	<!-- Footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<img src="./assets/images/velta_logo.svg" class="footer__image">
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+
+    <script>
+        function navigationControl() {
+          var x = document.getElementById("navigationInner");
+          if (x.className === "navigation__inner") {
+            x.className += " responsive";
+          } else {
+            x.className = "navigation__inner";
+          }
+        }
+    </script>
+</body>
+</html>

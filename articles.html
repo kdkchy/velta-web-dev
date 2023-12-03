@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/article.css">
+    <title>Velta Academy - Learning to build website</title>
+</head>
+<body>
+    <!-- Navbar unit -->
+    <div class="navigation">
+        <div class="container">
+            <nav class="navigation__inner" id="navigationInner">
+                <div class="navigation__menu">
+                    <a href="index.html" class="active">Velta</a>
+                    <a href="goal-maker.html">Goal Maker</a>
+                    <a href="articles.html">Articles</a>
+                    <a href="javascript:void(0);" class="icon" onclick="navigationControl()">
+                        [_]
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar unit -->
+
+    <!-- Hero unit -->
+	<section class="hero" id="home">
+		<div class="hero__inner">
+			<div class="container">
+				<div class="hero__content">
+					<div class="hero__content__inner">
+						<h1 class="hero__title">Articles</h1>
+						<p class="hero__text">What's new?</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <!-- Hero unit -->
+
+    <!-- Articles -->
+	<div class="articles" id="learning">
+		<div class="container">
+			<div class="article__list">
+				<div class="article">
+					<h4>Elon Musk Ignites Hate Storm Against Black Reporter; Here's What Really Went Down</h4>
+					<p class="article__author">Jessica Washington and Stephanie Holland - 2023-12-03T13:54:00Z</p>
+				</div>
+				<div class="article">
+					<h4>This week in EVs: Tesla holds Cybertruck launch event | Pro Recap</h4>
+					<p class="article__author">Investing.com - 2023-12-03T13:36:33Z</p>
+				</div>
+				<div class="article">
+					<h4>Saudi Arabia wants to become a force in electric-vehicle manufacturing</h4>
+					<p class="article__author">Economist - 2023-12-03T13:17:14Z</p>
+				</div>
+			</div>
+            <button class="button button__accent" type="submit">Refresh</button>
+		</div>
+	</div>
+	<!-- Articles -->
+
+    <div class="selected__article">
+        <div class="container">
+            <div class="single__article">
+                <h2>Elon Musk Ignites Hate Storm Against Black Reporter; Here's What Really Went Down</h2>
+                <p class="article__author__detail">Jessica Washington and Stephanie Holland - 2023-12-03T13:54:00Z</p>
+                <p class="article__detail">
+                    Carryover features include FM/DAB digital radio, Bluetooth, satellite navigation, voice control, Tesla app support, synthetic leather-look seat trim, heated steering wheel, heated rear seats, a power… [+129 chars]
+                </p>
+            </div>
+        </div>
+    </div>
+
+	<!-- Footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<img src="./assets/images/velta_logo.svg" class="footer__image">
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+
+    <script>
+        function navigationControl() {
+          var x = document.getElementById("navigationInner");
+          if (x.className === "navigation__inner") {
+            x.className += " responsive";
+          } else {
+            x.className = "navigation__inner";
+          }
+        }
+    </script>
+</body>
+</html>

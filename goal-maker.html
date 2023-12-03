@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/goal-maker.css">
+    <title>Velta Academy - Learning to build website</title>
+</head>
+<body>
+    <!-- Navbar unit -->
+    <div class="navigation">
+        <div class="container">
+            <nav class="navigation__inner" id="navigationInner">
+                <div class="navigation__menu">
+                    <a href="index.html" class="active">Velta</a>
+                    <a href="goal-maker.html">Goal Maker</a>
+                    <a href="articles.html">Articles</a>
+                    <a href="javascript:void(0);" class="icon" onclick="navigationControl()">
+                        [_]
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar unit -->
+
+    <!-- Hero unit -->
+	<section class="hero" id="home">
+		<div class="hero__inner">
+			<div class="container">
+				<div class="hero__content">
+					<div class="hero__content__inner">
+						<h1 class="hero__title">Goal Maker</h1>
+						<p class="hero__text">Write - Achieve - Repeat</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <!-- Hero unit -->
+
+    <!-- Goal Maker -->
+	<div class="goal__maker">
+        <div class="container">
+            <form>
+                <h2><label class="form__label" for="goal">Goal</label></h2>
+                <input type="text" id="goal" name="firstname" placeholder="Write down your goal">
+
+                <h2><label class="form__label" for="maker">Maker</label></h2>
+                <textarea rows="6" name="lastname" id="maker" placeholder="Write down your plans"></textarea>
+
+                <button class="button button__accent" type="submit">Submit</button>
+            </form>
+        </div>
+	</div>
+	<!-- Goal Maker -->
+    
+	<!-- Goal Maker List -->
+    <div class="goal__maker__list">
+        <div class="container">
+            <div class="goals">
+                <div class="goal__item">
+                    <h2 class="goal__title">My Goal</h2>
+                    <p class="goal__text">Small people with the big plan for bring future home.</p>
+                </div>
+                <div class="goal__item">
+                    <h2 class="goal__title">My Goal</h2>
+                    <p class="goal__text">Small people with the big plan for bring future home.</p>
+                </div>
+                <div class="goal__item">
+                    <h2 class="goal__title">My Goal</h2>
+                    <p class="goal__text">Small people with the big plan for bring future home.</p>
+                </div>
+                <div class="goal__item">
+                    <h2 class="goal__title">My Goal</h2>
+                    <p class="goal__text">Small people with the big plan for bring future home.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Goal Maker List -->
+
+
+	<!-- Footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<img src="./assets/images/velta_logo.svg" class="footer__image">
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+
+    <script>
+        function navigationControl() {
+          var x = document.getElementById("navigationInner");
+          if (x.className === "navigation__inner") {
+            x.className += " responsive";
+          } else {
+            x.className = "navigation__inner";
+          }
+        }
+    </script>
+</body>
+</html>
